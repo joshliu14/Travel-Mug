@@ -1,0 +1,74 @@
+.top {
+  background-color: #c19a6b;
+  display: flex;
+  min-width: fit-content;
+  min-height: 20vh;
+  border-width: 3px;
+  border-color: #6d573d;
+  border-style: double;
+}
+
+.logo {
+  padding: 100px;
+  border: 1px solid black;
+}
+
+.title {
+  text-align: center;
+  min-width: 665px;
+  margin-top: 50px;
+  margin-left: 430px;
+  margin-right: 200px;
+  border: 1px solid black;
+}
+
+.nav {
+  align-self: last baseline;
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+}
+.nav a {
+  font-size: large;
+  padding: 10px 20px;
+  color: black;
+  display: block;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: aliceblue;
+  background-color: #6d573d;
+}
+.bottom {
+  background-color: #eaddca;
+  display: flex;
+  min-width: fit-content;
+  min-height: 80vh;
+}
+
+.search-container {
+  align-self: last baseline;
+  border: 1px solid black;
+  margin-left: 150px;
+}
+.search-bar {
+  width: 200px;
+  height: 30px;
+  box-sizing: border-box;
+  border-width: 3px;
+  border-color: #c19a6b;
+  border-style: double;
+}
+
+.aside {
+  margin-left: 0px;
+  margin-right: 0px;
+  border: 1px solid black;
+}
+
+.aside button {
+  display: block;
+  margin: 20px;
+  border: 1px solid black;
+}

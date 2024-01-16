@@ -1,0 +1,152 @@
+/* Global Styles */
+a {
+  color: black;
+  text-decoration: none;
+  font-size: 40px;
+}
+
+/* Header Styles */
+.top {
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  min-width: fit-content;
+  min-height: 20vh;
+  border: 3px double #6d573d;
+}
+
+.logo {
+  width: 10%;
+  height: 10%;
+  padding: 30px;
+}
+
+.title {
+  text-align: center;
+  font-size: 40px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.nav a {
+  font-size: large;
+  padding: 10px 20px;
+  color: black;
+  display: block;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: aliceblue;
+  background-color: #6d573d;
+}
+
+/* Body Styles */
+.bottom {
+  background-color: white;
+  display: flex;
+}
+
+.side-container {
+  width: 12%;
+  border-right: 2px solid black;
+}
+
+.main-container {
+  width: 88%;
+}
+
+.main-container,
+.side-container {
+  height: 80vh;
+  overflow: hidden;
+}
+
+.main-content,
+.side-content {
+  overflow-y: auto;
+  max-height: 100%;
+}
+
+.search-container {
+  align-self: flex-end;
+}
+
+.search-container button {
+  height: 30px;
+}
+
+.search-bar {
+  border-radius: 18px;
+  width: 600px;
+  height: 45px;
+  margin-bottom: 10px;
+}
+
+.cafe-info {
+  text-align: center;
+  width: 20%;
+  border-right: 3px inset #6d573d;
+}
+
+.cafes {
+  display: flex;
+  border-bottom: 3px inset #6d573d;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  font-size: 20px;
+  margin: 20px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: grey;
+  padding: 10px;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+  .top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    width: 20%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .nav {
+    margin-top: 20px;
+  }
+
+  .search-container {
+    align-self: flex-start;
+  }
+
+  .search-container button {
+    height: 40px;
+  }
+
+  .search-bar {
+    width: 100%;
+  }
+
+  .cafe-info {
+    width: 100%;
+    border-right: none;
+  }
+
+  .filter {
+    margin: 10px;
+  }
+}

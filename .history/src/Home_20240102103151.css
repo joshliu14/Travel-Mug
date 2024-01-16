@@ -1,0 +1,52 @@
+.top-frame {
+  background-color: #c19a6b;
+  height: 190px;
+  position: relative;
+  width: 1512px;
+}
+
+.top-frame .logo {
+  background-color: #ffffff;
+  height: 119px;
+  left: 33px;
+  position: absolute;
+  top: 30px;
+  width: 118px;
+}
+
+.top-frame .about {
+  background-color: #ffffff;
+  height: 40px;
+  left: 1164px;
+  position: absolute;
+  top: 112px;
+  width: 126px;
+}
+
+.top-frame .text-wrapper {
+  color: #000000;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 32px;
+  font-weight: 400;
+  left: 1px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: -1px;
+  width: 125px;
+}
+
+.bottom-frame {
+  background-color: #eaddca;
+  height: 792px;
+  width: 1512px;
+}
+
+.bottom-frame .rectangle {
+  background-color: #ffffff;
+  height: 67px;
+  left: 298px;
+  position: relative;
+  top: 192px;
+  width: 916px;
+}

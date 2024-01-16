@@ -1,0 +1,21 @@
+.top {
+  background-color: #c19a6b;
+  display: flex;
+  min-width: 100vw;
+  min-height: 20vh;
+}
+
+.bottom {
+  background-color: #eaddca;
+  display: flex;
+  justify-content: center;
+  min-width: 100vw;
+  min-height: 80vh;
+}
+
+.search-bar {
+  width: 300px;
+  height: 40px;
+  padding: 8px;
+  box-sizing: border-box;
+}

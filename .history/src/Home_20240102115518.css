@@ -1,0 +1,13 @@
+.top {
+  background-color: #c19a6b;
+  display: block;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.bottom {
+  background-color: #eaddca;
+  display: block;
+  min-height: 100vh;
+  min-width: 100vw;
+}

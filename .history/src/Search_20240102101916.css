@@ -1,0 +1,93 @@
+.template {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.template .div {
+  background-color: #ffffff;
+  height: 982px;
+  position: relative;
+  width: 1512px;
+}
+
+.template .overlap {
+  height: 800px;
+  left: 0;
+  position: absolute;
+  top: 182px;
+  width: 1512px;
+}
+
+.template .overlap-group {
+  height: 800px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1512px;
+}
+
+.template .line {
+  height: 1px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 1px;
+  width: 1512px;
+}
+
+.template .img {
+  height: 800px;
+  left: 255px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1px;
+}
+
+.template .rectangle {
+  background-color: #d9d9d9;
+  height: 41px;
+  left: 37px;
+  position: absolute;
+  top: 71px;
+  width: 171px;
+}
+
+.template .rectangle-2 {
+  background-color: #d9d9d9;
+  height: 41px;
+  left: 37px;
+  position: absolute;
+  top: 173px;
+  width: 171px;
+}
+
+.template .rectangle-3 {
+  background-color: #d9d9d9;
+  height: 41px;
+  left: 36px;
+  position: absolute;
+  top: 275px;
+  width: 173px;
+}
+
+.template .rectangle-4 {
+  background-color: #d9d9d9;
+  height: 100px;
+  left: 50px;
+  position: absolute;
+  top: 41px;
+  width: 100px;
+}
+
+.template .rectangle-5 {
+  background-color: #d9d9d9;
+  height: 38px;
+  left: 305px;
+  position: absolute;
+  top: 103px;
+  width: 774px;
+}

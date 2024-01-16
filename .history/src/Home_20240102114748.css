@@ -1,0 +1,12 @@
+.top {
+  background-color: #c19a6b;
+  display: block;
+  min-width: 100%;
+}
+
+.bottom {
+  background-color: #eaddca;
+  display: block;
+  height: 100%;
+  width: auto;
+}

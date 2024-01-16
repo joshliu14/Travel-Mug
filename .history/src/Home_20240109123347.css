@@ -1,0 +1,110 @@
+.top {
+  background-color: #c19a6b;
+  display: flex;
+  justify-content: space-between;
+  min-width: fit-content;
+  min-height: 20vh;
+  border-width: 3px;
+  border-color: #6d573d;
+  border-style: double;
+}
+
+.logo {
+  padding: 100px;
+}
+
+.logo img {
+}
+.title {
+  text-align: center;
+  font-size: 40px;
+}
+
+.nav {
+  align-self: last baseline;
+  display: flex;
+  justify-content: center;
+}
+.nav a {
+  font-size: large;
+  padding: 10px 20px;
+  color: black;
+  display: block;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: aliceblue;
+  background-color: #6d573d;
+}
+.bottom {
+  background-color: #eaddca;
+  display: flex;
+}
+
+.main-container,
+.side-container {
+  height: 80vh;
+  overflow: hidden;
+}
+
+.side-container {
+  width: 12%;
+  border-right: 2px solid black;
+}
+
+.main-container {
+  width: 88%;
+}
+
+.main-content,
+.side-content {
+  overflow-y: auto;
+  max-height: 100%;
+}
+
+.search-container {
+  align-self: flex-end;
+}
+
+.search-container button {
+  height: 30px;
+}
+.search-bar {
+  width: 200px;
+  height: 30px;
+  box-sizing: border-box;
+  border-width: 3px;
+  border-color: #c19a6b;
+  border-style: double;
+}
+
+.cafe-info {
+  text-align: center;
+  width: 20%;
+  border-right: 3px inset #6d573d;
+}
+
+.cafes {
+  display: flex;
+  border-bottom: 3px inset #6d573d;
+}
+
+.filter {
+  display: block;
+  justify-content: center;
+  padding: 20px;
+  font-size: 20px;
+  margin: 20px;
+}
+
+footer {
+  background-color: #887054;
+  padding: 10px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-size: 40px;
+}
