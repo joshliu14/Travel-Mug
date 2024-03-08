@@ -1,0 +1,77 @@
+name: CI/CD
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "20.x"
+      
+      - name: Install Dependencies
+        run: npm ci
+        working-directory: Travel-Mug
+
+      - name: Test
+          run: npm test
+          working-directory: Travel-Mug
+  
+  deploy-firebase:
+    name: Deploy to Firebase
+    runs-on: ubuntu-latest
+    needs: test
+    environment: prd
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "20.x"
+
+      - name: Install Firebase Tools
+        run: npm install -g firebase-tools
+
+      - name: Deploy to Firebase
+        run: firebase deploy --token ${{ secrets.FIREBASE_TOKEN }}
+        working-directory: Travel-Mug
+  
+  deploy-azure:
+    name: Deploy to Azure
+    runs-on: ubuntu-latest
+    needs: test
+    evironment: prd
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Log into Azure
+        uses: actions/setup-node@v2
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscritpion-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+
+      - name: Build and Deploy Container App
+          uses: azure/container-apps-deploy-action@v1
+          with:
+            appSourcePath: Travel-Mug
+            acrName:
+            containerAppName:
+            resourceGroup:
