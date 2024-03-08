@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "core-js": "^3.36.0",
     "firebase": "^7.15.1",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",

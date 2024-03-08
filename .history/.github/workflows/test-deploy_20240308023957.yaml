@@ -74,7 +74,7 @@ jobs:
       - name: Build and Deploy Container App
         uses: azure/container-apps-deploy-action@v1
         with:
-          appSourcePath: ${{ github.workspace }}
+          appSourcePath: Travel-Mug
           acrName: travelmugcontainerregistry
           containerAppName: travelmugcontainerapp
           resourceGroup: travelmugresourcegroup

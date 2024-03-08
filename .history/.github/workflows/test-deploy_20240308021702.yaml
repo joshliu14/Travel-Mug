@@ -43,14 +43,8 @@ jobs:
         with:
           node-version: "20.x"
 
-      - name: Install Dependencies
-        run: npm ci
-
       - name: Install Firebase Tools
         run: npm install -g firebase-tools
-
-      - name: Run Build
-        run: npm run build
 
       - name: Deploy to Firebase
         run: firebase deploy --token ${{ secrets.FIREBASE_TOKEN }}
@@ -69,12 +63,12 @@ jobs:
         with:
           client-id: ${{ secrets.AZURE_CLIENT_ID }}
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+          subscriptpion-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
       - name: Build and Deploy Container App
         uses: azure/container-apps-deploy-action@v1
         with:
-          appSourcePath: ${{ github.workspace }}
+          appSourcePath: Travel-Mug
           acrName: travelmugcontainerregistry
           containerAppName: travelmugcontainerapp
           resourceGroup: travelmugresourcegroup
